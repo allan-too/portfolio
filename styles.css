@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('downloads/Typewriter-Bold.otf') format('truetype');
+}
+
+* {
+    font-family: 'CustomFont', sans-serif;
+}
+div {
+    cursor: progress;
+}
+
+body {
+    margin: 0;
+    display: flex;                   
+    min-height: 100vh;               
+  }
+
+
+
+  body {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #004a3e;  /* if you still want your green bg behind it */
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+    box-sizing: border-box;
+  }
+  .header,
+  .container1,
+  .content {
+    padding: 1rem;
+    flex: 1;                          
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      display: block;                 
+    }
+    nav {
+      position: relative;             
+      width: 100%;                    
+      height: auto;                   
+      border-right: none;
+      box-shadow: none;
+    }
+    .header,
+    .container1,
+    .content {
+      margin-left: 0;                 
+    }
+  }
+  
+  .sidebar{
+    width: auto-fit;
+
+    padding: 30px;
+    background-color: #191a19;
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+
+    height: auto;
+    border-radius: 5px 10px;
+    margin-right: 30px;
+    margin-left: 0%;
+} 
+.sidebar li{
+    list-style: none;
+    padding: 10px;
+}
+.sidebar li a{
+    text-decoration: none;
+    color: #fff;
+}
+.sidebar li a:hover{
+    color: #259c57;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease, margin-left 0.3s ease;
+    margin-left: 10px;
+    border-radius: 5px;;
+    transform: scale(1.1);
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.icon:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+      body {
+        background-color: #0e0017;
+        background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+        background-size: 20px 20px;
+        background-attachment: fixed;
+        color: #fff;
+        font-family: 'CustomFont', sans-serif;
+        
+      }
+      .container1 {
+        display: grid; 
+        grid-template-columns: repeat(2,auto);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        color: rgb(255, 255, 255); 
+        padding: 20px; 
+        background-color: rgba(20, 19, 19, 0.25);
+        backdrop-filter: blur(8px);
+    }
+    .image img{
+        margin-top: 20px;
+        height: 20vh;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(70, 71, 71, 0.2);
+        
+    }
+    .image img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+    hr{
+        border: 1px solid rgb(255, 255, 255);
+        margin: 20px 0;
+    }
+    .text{
+        display: inline-block; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+        
+    }
+    .text h1{
+        font-size: 1.8rem; 
+        margin: 0;
+        padding: 0;
+        font-weight: bolder;
+    }
+    .container2 {
+        display: grid; 
+        grid-template-columns: repeat(2, auto);
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 50px;
+        padding:15px  20px; 
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+    }
+    .container2 button{
+        background: rgb(12, 153, 196);
+        padding: 8px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        border: none;
+    }
+    .container2 button a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .container2 button:hover{
+        background: rgb(22, 194, 247);
+        color: rgb(255, 255, 255);
+        cursor: default;
+        transition: background 0.3s ease, transform 0.3s ease;
+        transform: scale(1.1);
+    }
+
+
+    .coder{    
+        padding: 20px;
+        height: 90px;
+    }
+    .skills h2, img{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        gap: 0;
+        justify-content: center;
+    }
+    .languages{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-width: none;
+    
+    }
+    .languages li{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        margin: 0;
+    }
+    .languages img{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 20px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      
+      .card {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(255, 67, 67, 0.1);
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(8, 8, 8, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 16px;
+
+      }
+       .card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #dbbfbf;
+        }
+#service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    text-align: center;
+ }
+ .grid-container .card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor:none;}
+
+ .h2myprojects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    text-align: center;
+}
+  
+
+ .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0 auto;}
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 180px;
+  }
+  
+  .project-info {
+    padding: 1rem;
+  }
+  
+  .project-info h3 {
+    margin: 0 0 0.5rem;
+    color: #fff;
+  }
+  
+  .project-info p {
+    margin: 0;
+    color: #ddd;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .project-container {
+      margin-left: 0; /* full width on mobile */
+      padding: 1rem;
+    }
+  }
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  .lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .lightbox-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .lightbox-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #23d5ab;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+.contact input{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: auto;
+  background-color: rgba(20, 19, 19, 0.25);
+  backdrop-filter: blur(8px);
+  margin-bottom: 20px;
+  width: auto;
+}
+.contact textarea{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: auto;
+  background-color: rgba(20, 19, 19, 0.25);
+  backdrop-filter: blur(8px);
+  margin-bottom: 20px;
+}
+.contact button{
+  background: rgb(12, 153, 196);
+  padding: 12px;
+  width: 100px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+}
+footer{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+  background-color: rgba(199, 10, 10, 0.25);
+  gap: 20px;
+}

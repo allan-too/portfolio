@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portofolio</title>
+</head>
+<body>
+
+
+  <aside class="sidebar">
+    <h2 class="cat">Categories</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <h2 id="h2">Social Links</h2>
+    <ul class="social-links">
+      <li>
+      <a href="http://www.linkedin.com/in/kipchirchir-too" >
+        <img src="icons/linkedin.png" alt="LinkedIn Icon" class="icon"> LinkedIn
+      </a>
+      </li>
+      <li>
+      <a href="https://github.com/allan-too" >
+        <img src="icons/github_5968866.png" alt="GitHub Icon" class="icon"> GitHub
+      </a>
+      </li>
+      <li>
+      <a href="https://t.me/kilanpsd" >
+        <img src="icons/telegram.png" alt="Telegram Icon" class="icon"> Telegram
+      </a>
+      </li>
+      <li>
+      <a href="tel:+254710944249">
+        <img src="icons/telephone_724664.png" alt="Phone Icon" class="icon"> Phone
+      </a>
+      </li>
+      <li>
+      <a href="mailto:kipchirchirtoo01@gmail.com" id="contact">
+        <img src="icons/envelope_17698213.png" alt="Email Icon" class="icon"> Email
+      </a>
+      </li>
+    </ul></a>
+</aside>
+    <div class="header">
+    <div class="container1" id="home">
+        <div class="image">
+            <img src="images/IMG_20250207_221350.jpg" alt="Image" class="image1 animated-image">
+            <style>
+              .animated-image {
+              animation: zoomInOut 3s ease-in-out infinite;
+              }
+
+              @keyframes zoomInOut {
+              0%, 100% {
+              transform: scale(1);
+              }
+              50% {
+              transform: scale(1.1);
+              }
+              }
+            </style>
+        </div>
+        <div class="text">
+            <h1 class="animated-text">Welcome to My Portfolio</h1>
+            <style>
+              .animated-text {
+              display: inline-block;
+              white-space: nowrap;
+              overflow: hidden;
+              animation: slideInWords 5s steps(30, end) infinite;
+              }
+
+              @keyframes slideInWords {
+              from {
+                width: 0;
+              }
+              to {
+                width: 100%;
+              }
+              }
+            </style>
+        </div>
+    </div>
+    <hr>
+    <div class="content" id="about">
+    <div class="container2">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>I'm KIPCHIRCHIR TOO, a passionate front-end developer based in Nairobi, Kenya, with a strong eye for detail and a love for turning ideas into interactive, user-friendly websites. With a Diploma in Software Engineering from Moringa School and certifications from FreeCodeCamp, HubSpot Academy, and Simplilearn, I’ve built a solid foundation in HTML, CSS, JavaScript, and React.
+
+                Beyond code, I bring over 3 years of hands-on experience in virtual assistance, SEO content writing, academic research, and chat moderation—skills that have sharpened my problem-solving, communication, and multitasking abilities.
+                
+                Currently pursuing a Bachelor of Law at the University of Nairobi, I combine analytical thinking with creative tech skills to deliver clean, responsive, and accessible web experiences. I thrive on continuous learning, whether it's diving into new frameworks or refining my GitHub and portfolio projects.
+                </p>
+                <button class="btn"><a href="downloads/my-resume.pdf" download>Download Resume</a></button>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h2>Skills
+            <img src="images/coder_15267799.png" alt="skills" class="coder">
+        </h2>
+        <ul>    
+            <div class="languages">
+                <div class="card1"><li class="html">HTML <img src="images/html-5_919827.png"  class="lng"></li>
+                </div>
+                <div class="card1"><li class="css">CSS <img src="images/css_919826.png" class="lng"></li>
+                </div>
+                <div class="card1"><li class="javascript">JavaScript <img src="images/java-script_1199124.png" class="lng"></li>
+                </div>
+               <div class="card1"> <li class="react">React <img src="images/react_1183672.png" class="lng"></li>
+               </div> 
+            </div>
+        </ul>
+    </div>
+</div>
+<hr>
+<h2 id="service">MY SERVICES</h2>
+
+<div class="grid-container" id="services">
+
+    <div class="card">
+      <h3>Custom Website Development</h3>
+      <p>Craft responsive, mobile-friendly websites using HTML5, CSS3, JavaScript, and React.js.
+
+        Ensure cross-browser compatibility and optimal performance.</p>
+    </div>
+    <div class="card">
+      <h3>Single Page Applications (SPAs)</h3>
+      <p>Develop dynamic SPAs with React.js for seamless user experiences.
+        Implement efficient state management using tools like Redux.</p>
+    </div>
+    <div class="card">
+      <h3>Progressive Web Applications (PWAs)</h3>
+      <p>Build PWAs that offer offline capabilities and app-like experiences.
+        Enhance user engagement with push notifications and fast load times.</p>
+    </div>
+    <div class="card">
+        <h3>UI/UX Design Implementation</h3>
+        <p>Translate design mockups into interactive interfaces.
+            Focus on user-centric design principles to enhance usability.</p>
+      </div>
+  </div>
+
+<div class="h2myprojects">
+    <h2>My Projects</h2>
+</div>
+<!-- Project Showcase Section -->
+<div class="project-container" id="projects">
+    <!-- Project Card 1 -->
+    <div class="project-card">
+      <a href="https://example.com/project1" target="_blank" rel="noopener">
+        <img src="projects/KILAN SHOP_page-0001.jpg" alt="Screenshot of Project 1">
+        <div class="project-info">
+          <h3>E-Commerce Project</h3>
+            <p>An e-commerce web application designed for seamless online shopping. Features include product browsing, a user-friendly cart system, secure checkout, and responsive design for all devices.</p>
+        </div>
+      </a>
+    </div>
+    <!-- Project Card 2 -->
+    <div class="project-card">
+      <a href="https://example.com/project2" target="_blank" rel="noopener">
+        <img src="projects/Global_page-0001.jpg" alt="Screenshot of Project 2">
+        <div class="project-info">
+          <h3>Portfolio Poject</h3>
+            <p>A personal portfolio website showcasing my skills, projects, and professional journey. Built with HTML, CSS, and JavaScript, it features a responsive design and smooth navigation to highlight my expertise and achievements.</p>
+        </div>
+      </a>
+    </div>
+</div>
+<div class="contact" >
+  <h2 id="contact">Contact Me</h2>
+  <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+  <form action="https://formspree.io/f/xnnpkgrv" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+</div>
+  </form>
+  <footer>
+    <p>&copy; 2025 Kipchirchir Too.&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.</p>
+    <p>Designed by Kipchirchir Too</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
